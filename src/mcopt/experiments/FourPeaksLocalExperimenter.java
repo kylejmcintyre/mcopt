@@ -1,6 +1,7 @@
-package mcopt.problems;
+package mcopt.experiments;
 
 import mcopt.*;
+import mcopt.problems.FourPeaksProblem;
 
 import java.util.ArrayList;
 import java.util.BitSet;

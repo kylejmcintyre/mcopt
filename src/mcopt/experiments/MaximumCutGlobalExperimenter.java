@@ -1,4 +1,4 @@
-package mcopt.problems;
+package mcopt.experiments;
 
 import mcopt.*;
 
