@@ -18,8 +18,10 @@ Highlights include:
     maximize a problem with a known solution, or the cost in fitness function evals per unit 
     of fitness for problems where the optimum is unkown.
     
-The last three bullets distinguish this library from ABAGAIL and make for more informative
-experiments. See example.tsv in this directory for example experiment output. 
+The last three bullets distinguish this library from ABAGAIL which requires the user
+to specify the number of iterations which is generally unknown to the user and may result in
+running an algorithm long after it has converged. See example.tsv in this directory for 
+example experiment output. 
 
 mcopt can be used for continuous space problems. I used it to optimize weights in an ANN. However,
 no continous examples are currently included in the repo. MIMIC only works on BitSet problems.
