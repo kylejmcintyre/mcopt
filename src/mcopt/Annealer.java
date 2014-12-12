@@ -4,6 +4,11 @@ import mcopt.util.Pair;
 
 import java.util.Iterator;
 
+/**
+ * Simulated Annealing implementation. Will automatically terminate when
+ * the algorithm is highly deterministic (low temp) and the fitness fails to
+ * improve after a configurable number of iterations.
+ */
 public class Annealer<T> extends RandomOptimizer<T> {
     private NeighborFunction<T> neighborFunction;
     protected double temp;

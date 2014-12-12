@@ -7,6 +7,18 @@ import java.io.FileWriter;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Base class for experiments. Experiments run over  a list of
+ * OptimizationProblem and a list of RandomOptimizer. Takes a
+ * configurable number of restarts and/or a configurable number of times
+ * to hit a discover a known-optimum value. Various mterics/stats are computed.
+ *
+ * Sub-classes of this class should expose a main function that calls run().
+ * Results are printed to stdout as well as written to a tsv file named
+ * after the experiment. 
+ *
+ * @param <T> type of the problem encoding
+ */
 public abstract class Experiment<T> {
     public abstract List<OptimizationProblem<T>> getProblems();
     public abstract List<RandomOptimizer<T>> getOptimizers();

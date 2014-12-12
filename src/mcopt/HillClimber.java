@@ -4,6 +4,10 @@ import mcopt.util.Pair;
 
 import java.util.Iterator;
 
+/**
+ * Basic hill-climbing optimizer. Terminates when no neighbors offer
+ * higher fitness than the current configuration.
+ */
 public class HillClimber<T> extends RandomOptimizer<T> {
     private NeighborFunction<T> neighborFunction;
     private Pair<T, Double> current = null;

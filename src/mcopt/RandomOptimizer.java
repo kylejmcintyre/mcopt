@@ -2,6 +2,15 @@ package mcopt;
 
 import mcopt.util.Pair;
 
+/**
+ * Base class for a random optimization algorithm. An instance of an optimizer
+ * must be provided with an instance of an OptimizationProblem of the same
+ * generic type to solve. Tracks the number of iterations, best configuration seen,
+ * number of stale iterations, etc.
+ *
+ * @param <T> the type of the problem encoding
+ */
+
 public abstract class RandomOptimizer<T> {
     protected OptimizationProblem<T> problem;
     private Pair<T, Double> best;

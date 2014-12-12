@@ -15,6 +15,14 @@ import shared.Instance;
 
 import java.util.BitSet;
 
+/**
+ * Wrapper around ABAGAIL's implementation of the MIMIC random optimization
+ * algorithm because I was too lazy to reimplement it. To use this class, put
+ * the abagail jar on your classpath and uncomment the code in this class.
+ *
+ * Note: Only works on BitSet optimization problems!
+ */
+
 public abstract class Mimicker extends RandomOptimizer<BitSet> {
 
     /*

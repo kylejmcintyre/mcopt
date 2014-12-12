@@ -5,6 +5,11 @@ import mcopt.OptimizationProblem;
 import java.util.BitSet;
 import java.util.Random;
 
+/**
+ * "Four peaks" optimization problem. Contains four optima, two of which global.
+ * Described more thoroughly in the following paper:
+ * paper: http://papers.nips.cc/paper/1328-mimic-finding-optima-by-estimating-probability-densities.pdf
+ */
 public class FourPeaksProblem extends OptimizationProblem<BitSet> {
     private int length;
     private int t;

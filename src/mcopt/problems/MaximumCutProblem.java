@@ -5,6 +5,9 @@ import mcopt.OptimizationProblem;
 import java.util.BitSet;
 import java.util.Random;
 
+/**
+ * Graph maximum-cut problem (NP Hard) encoded as a bit-string optimization problem.
+ */
 public class MaximumCutProblem extends OptimizationProblem<BitSet> {
     private Double[][] adjacency;
     private String desc;

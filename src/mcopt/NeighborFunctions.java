@@ -2,6 +2,10 @@ package mcopt;
 
 import java.util.*;
 
+/**
+ * Various neighbor functions that might be useful, particularly for
+ * BitSet and List<Double> configuration problems.
+ */
 public class NeighborFunctions {
 
     enum ContinuousStep {

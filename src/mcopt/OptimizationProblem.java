@@ -1,5 +1,11 @@
 package mcopt;
 
+/**
+ * Base class for optimization problems. Tracks the number of times
+ * the fitness function is evaluated in addition to defining the
+ * interface for a problem.
+ * @param <T>
+ */
 public abstract class OptimizationProblem<T> {
     private int numFitnessCalcs = 0;
 

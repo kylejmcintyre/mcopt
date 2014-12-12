@@ -4,6 +4,10 @@ import mcopt.util.Pair;
 
 import java.util.*;
 
+/**
+ * Genetic Algorithm implementation. Takes breeder (crossover implementation) and mutator
+ * as input.
+ */
 public class Evolver<T> extends RandomOptimizer<T> {
     private List<T> population;
     private int popKeep;
@@ -14,10 +18,18 @@ public class Evolver<T> extends RandomOptimizer<T> {
 
     private int toMutate;
 
+    /**
+     * Use this interface to implement various types of population breeding
+     * @param <T>
+     */
     public interface Breeder<T> {
         public T breed(T m, T d);
     }
 
+    /**
+     * Use this interface to implement various types of mutations
+     * @param <T>
+     */
     public interface Mutator<T> {
         public T mutate(T t);
     }
