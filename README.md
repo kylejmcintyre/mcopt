@@ -1,7 +1,7 @@
 mcopt
 =====
 
-Java library for randomized optimization. Includes several toy problems and experiment harness.
+Java library for randomized optimization. Includes several toy problems and experimention harness.
 
 This code was developed primarily in support of my enrollment in CS7641 at Georgia Tech. It
 supports hill-climbing, simulated annealing, genetic algorithms (single and uniform crossover) as well
