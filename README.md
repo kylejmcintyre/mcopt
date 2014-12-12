@@ -23,3 +23,8 @@ See example.tsv in this directory for example experiment output from the four pe
 
 mcopt can be used for continuous space problems. I used it to optimize weights in an ANN. However,
 no continous examples are currently included in the repo. MIMIC only works on BitSet problems.
+
+Dependencies:
+  * Apache commons lang3
+  * Apache commons math
+  * ABAGAIL (optional, required to use MIMIC)
